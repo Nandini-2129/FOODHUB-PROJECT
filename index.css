@@ -1,0 +1,540 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff7f0;
+    color:red;
+}
+
+/* Toggle Button */
+.menu-btn{
+    display:none;
+    font-size:30px;
+    background:none;
+    border:none;
+    color:red;
+    cursor:pointer;
+    padding:5px;
+}
+
+header{
+    height:75px;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:100;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    background:rgba(23,151,163,0.507);
+    box-shadow:0 3px 15px #0002;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    color:red;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+}
+
+nav a{
+    margin-left:20px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+    text-decoration:none;
+    color:black;
+}
+
+nav a:hover{
+    color:green;
+}
+
+.hero{
+    height:1200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:url("image.png");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:20px;
+    margin:15px;
+}
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.search-box input{
+    width:320px;
+    padding:14px;
+    border:none;
+    border-radius:25px;
+    outline:none;
+}
+
+.search-box button{
+    padding:14px 25px;
+    border:none;
+    border-radius:25px;
+    background:yellowgreen;
+    color:white;
+    cursor:pointer;
+}
+
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+#aboutPage{
+    width:100%;
+    min-height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.about-content{
+    max-width:700px;
+    margin:auto;
+}
+
+.about-box{
+    max-width:800px;
+    width:100%;
+    background:greenyellow;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 25px #0003;
+    transition:.3s;
+}
+
+.about-box h1{
+    color:#ff4d00;
+    margin-bottom:15px;
+    font-size:35px;
+}
+
+.about-box p{
+    font-size:17px;
+    line-height:1.6;
+    margin:8px;
+}
+
+.about-box:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 20px 40px #0004;
+}
+
+/* ===========================
+   COMMON SECTION
+=========================== */
+
+.section{
+    padding:80px 30px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.section-title h1{
+    color:#ff4d00;
+}
+
+/* ===========================
+   FOOD CARDS
+=========================== */
+
+.food-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    cursor:pointer;
+    box-shadow:0 8px 20px #0002;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    padding:15px;
+}
+
+.heart{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:28px;
+}
+
+/* ===========================
+   DETAILS PAGE
+=========================== */
+
+#detailsPage{
+    display:none;
+    min-height:100vh;
+    padding:90px 30px;
+    background:#fff7f0;
+}
+
+.back-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:999;
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:#ff4d00;
+    color:white;
+    cursor:pointer;
+}
+
+.details-box{
+    max-width:850px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:25px;
+}
+
+.details-image img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.details-content h1{
+    color:#ff4d00;
+    margin:20px 0;
+}
+
+#ingredients li{
+    margin:8px;
+}
+/* ===========================
+   CONTACT PAGE
+=========================== */
+
+#contactPage{
+    min-height:100vh;
+    background:url("https://images.unsplash.com/photo-1514933651103-005eec06c04b");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.contact-box{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.contact-card{
+    width:300px;
+    background:#ffffffdd;
+    color:#f12020;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    transition:.3s ease;
+    cursor:pointer;
+}
+
+.contact-card:hover{
+    transform:translateY(-15px);
+    box-shadow:0 15px 30px #0005;
+}
+
+.section-title h1{
+    color:#ffd700;
+    text-shadow:0 0 10px #000;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:goldenrod;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* ===========================
+   FAVOURITE SECTION
+=========================== */
+
+#favouritePage .food-container{
+    grid-template-columns:repeat(auto-fit,minmax(180px,220px));
+    justify-content:center;
+    gap:20px;
+}
+
+#favouritePage .card{
+    width:220px;
+}
+
+#favouritePage .card img{
+    height:140px;
+}
+
+/* ===========================
+   POPULAR RECIPES
+=========================== */
+
+#foodContainer{
+    grid-template-columns:repeat(auto-fit,minmax(180px,220px));
+    justify-content:center;
+    gap:25px;
+}
+
+#foodContainer .card{
+    width:220px;
+}
+
+#foodContainer .card img{
+    height:140px;
+}
+
+/* ===========================
+   CARD ANIMATION
+=========================== */
+
+.card{
+    transition:transform .3s ease,
+               box-shadow .3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+}
+
+.about-box,
+.contact-card{
+    transition:all .3s ease;
+}
+/* ======================================
+   RESPONSIVE DESIGN + TOGGLE MENU
+====================================== */
+
+@media screen and (max-width:768px){
+
+/* Toggle Button */
+
+.menu-btn{
+    display:block;
+    font-size:30px;
+    background:none;
+    border:none;
+    color:red;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+/* Header */
+
+header{
+    flex-wrap:wrap;
+    height:auto;
+    padding:15px 20px;
+}
+
+.logo{
+    font-size:20px;
+    flex:1;
+}
+
+/* Search */
+
+.search-box{
+    width:100%;
+    margin-top:15px;
+    justify-content:center;
+    order:3;
+}
+
+.search-box input{
+    width:75%;
+}
+
+.search-box button{
+    padding:12px 18px;
+}
+
+/* Navigation */
+
+nav{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+    background:rgba(23,151,163,.95);
+    margin-top:15px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+nav.active{
+    display:flex;
+}
+
+nav a{
+    width:100%;
+    margin:0;
+    padding:15px;
+    text-align:center;
+    color:white;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+nav a:last-child{
+    border-bottom:none;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,.15);
+    color:white;
+}
+
+/* Hero */
+
+.hero{
+    height:500px;
+    background-position:center;
+}
+
+/* About */
+
+.about-box{
+    width:100%;
+    padding:20px;
+}
+
+.about-box h1{
+    font-size:28px;
+}
+
+.about-box p{
+    font-size:15px;
+}
+
+/* Cards */
+
+.food-container{
+    grid-template-columns:1fr;
+    justify-items:center;
+}
+
+.card{
+    width:90%;
+}
+
+/* Details */
+
+.details-box{
+    width:100%;
+    padding:20px;
+}
+
+.details-image img{
+    height:220px;
+}
+
+/* Contact */
+
+.contact-box{
+    flex-direction:column;
+    align-items:center;
+}
+
+.contact-card{
+    width:90%;
+}
+
+/* Footer */
+
+footer{
+    padding:20px;
+    font-size:14px;
+}
+
+}
+
+/* Desktop */
+
+@media screen and (min-width:769px){
+
+.menu-btn{
+    display:none;
+}
+
+nav{
+    display:flex !important;
+}
+
+}

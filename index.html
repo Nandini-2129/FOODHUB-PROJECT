@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NJ FoodHub Elite</title>
+
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<header>
+
+    <!-- Toggle Button -->
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <!-- Logo -->
+    <div class="logo">👑 NJ FoodHub Elite 👑</div>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search food...">
+        <button id="searchBtn">🔍</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navMenu">
+        <a href="javascript:void(0)" onclick="homeScroll()">Home</a>
+        <a href="javascript:void(0)" onclick="aboutScroll()">About</a>
+        <a href="javascript:void(0)" onclick="favScroll()">Favourite</a>
+        <a href="javascript:void(0)" onclick="recipeScroll()">Recipes</a>
+        <a href="javascript:void(0)" onclick="contactScroll()">Contact</a>
+    </nav>
+
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="homeSection">
+    <div>
+        <!-- Hero Content -->
+    </div>
+</section>
+
+<!-- About -->
+<section id="aboutPage">
+
+    <div class="about-box">
+        <h1>✨ About NJ FoodHub Elite</h1>
+
+        <p>Welcome to <strong>NJ FoodHub Elite</strong> 🍽️</p>
+
+        <p>
+            NJ FoodHub Elite is your destination for discovering delicious
+            recipes from around the world. Whether you are a beginner or an
+            experienced cook, our website helps you prepare tasty dishes with
+            easy step-by-step instructions.
+        </p>
+
+        <p>
+            Explore a variety of recipes, save your favourites, and enjoy
+            cooking with your family and friends.
+        </p>
+
+        <p><strong>Cook • Explore • Enjoy ❤️</strong></p>
+
+    </div>
+
+</section>
+
+<!-- Favourite -->
+<section id="favouritePage" class="section">
+
+    <div class="section-title">
+        <h1>❤️ Favourite Recipes</h1>
+    </div>
+
+    <div id="favContainer" class="food-container"></div>
+
+</section>
+
+<!-- Popular Recipes -->
+<section id="foodSection" class="section">
+
+    <div class="section-title">
+        <h1>🍴 Popular Recipes</h1>
+    </div>
+
+    <div id="foodContainer" class="food-container"></div>
+
+</section>
+
+<!-- Details -->
+<section id="detailsPage">
+
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+    <div class="details-box">
+
+        <div class="details-image">
+            <img id="detailImg" alt="Recipe Image">
+        </div>
+
+        <div class="details-content">
+
+            <h1 id="detailName"></h1>
+
+            <h2>🥗 Ingredients</h2>
+
+            <ul id="ingredients"></ul>
+
+            <h2>👨‍🍳 Instructions</h2>
+
+            <p id="instructions"></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contactPage">
+
+    <div class="section-title">
+        <h1>📞 Contact Us</h1>
+    </div>
+
+    <div class="contact-box">
+
+        <div class="contact-card">
+
+            <h2>👑 NJ FoodHub Elite 👑</h2>
+
+            <p>📧 contact@foodhubelite.com</p>
+
+            <p>📞 +91 9876543210</p>
+
+            <p>📍 India</p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h2>✨ About Us</h2>
+
+            <p>
+                We provide delicious recipes, cooking ideas, and food inspiration
+                for everyone. Our goal is to make cooking simple, enjoyable,
+                and accessible to all food lovers.
+            </p>
+
+            <p>Enjoy your favourite food ❤️</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+    <h2>👑 NJ FoodHub Elite 👑</h2>
+
+    <p>© 2026 Food Recipe App</p>
+
+    <p>Fresh Recipes | Delicious Food</p>
+
+    <p>All Rights Reserved</p>
+
+</footer>
+
+<!-- JavaScript -->
+<script src="index.js"></script>
+
+</body>
+</html>
